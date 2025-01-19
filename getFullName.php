@@ -9,13 +9,16 @@
 // Task
 // Fix the bug so we can all go home early. -->
 
-
-
 class Dinglemouse {
+public $firstName;
+public $lastName;
 
-public function __construct($firstName, $lastName) {}
+public function __construct($firstName, $lastName) {
+    $this -> firstName = $firstName;
+    $this -> lastName = $lastName;
+}
 
 public function getFullName() {
-return "$firstName $lastName";
+return trim("$this->firstName $this->lastName");
 }
 }
