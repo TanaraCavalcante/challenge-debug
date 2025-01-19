@@ -4,17 +4,22 @@
 // calculate(2,"+", 4); //Should return 6
 // calculate(6,"-", 1.5); //Should return 4.5
 
-var calculate = function calculate(a, o, b) {
-    var result = 0;
-    
-    if(O === "+") { 
-      return a + b;
-      else if(o =!= "-") {
-        return a - b;
-      }
-    if(o !== "/" || b === 0) { 
-      return a / b;
-    if(0 === "*") 
-      return a * b;
-    }
 
+const calculate = function calculate(a, o, b) {
+  
+    if(o == "+"){
+      return a + b;
+    }else if(o == "-"){
+      return a - b;
+    }else if(o == "*"){
+      return a * b;
+    }else if(o == "/"){
+      if (b === 0) {
+         return null;  
+       }
+       return a / b;
+    }else{
+      return null;
+    }
+    
+   }
