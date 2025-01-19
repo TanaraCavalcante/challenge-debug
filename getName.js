@@ -9,6 +9,8 @@
 
 // getNames(data) // should return ['Joe', 'Bill', 'Kate']
 
-function getNames(data){
-    return data.map(function(item){item.name});
+function getNames(data) {
+    return data.map(function(item) {
+      return item.name; 
+    });
   }
