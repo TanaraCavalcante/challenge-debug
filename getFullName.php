@@ -10,8 +10,8 @@
 // Fix the bug so we can all go home early. -->
 
 class Dinglemouse {
-public $firstName;
-public $lastName;
+private $firstName;
+private $lastName;
 
 public function __construct($firstName, $lastName) {
     $this -> firstName = $firstName;
